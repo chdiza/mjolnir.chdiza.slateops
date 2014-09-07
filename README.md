@@ -21,9 +21,7 @@ Slate operation on a window you specify within your lua code.
 
 ### Corner
 
-````lua
-slateops.corner(whichcorner)
-````
+`slateops.corner(whichcorner)`
 
 This function puts the currently focused window in either Northeast,
 Southeast, Southwest, or Northwest corner of your current monitor
