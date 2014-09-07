@@ -7,9 +7,9 @@ window-resizing operations, namely, "corner", "push", "resize", and
 
 I'm new to Lua, so if you see that I do something incorrect or newbish, file an issue or PR.
 
-*Required modules*: mjolnir.window, mjolnir.screen.
+**Required modules**: mjolnir.window, mjolnir.screen.
 
-*Recommended modules*: mjolnir.hotkey (This module is pretty worthless
+**Recommended modules**: mjolnir.hotkey (This module is pretty worthless
 unless you bind its functions to hotkeys.)
 
 For each of these Slate operations, there are two Mjolnir functions.
@@ -21,7 +21,9 @@ Slate operation on a window you specify within your lua code.
 
 ### Corner
 
-`slateops.corner(whichcorner)`
+````lua
+slateops.corner(whichcorner)
+````
 
 This function puts the currently focused window in either Northeast,
 Southeast, Southwest, or Northwest corner of your current monitor
