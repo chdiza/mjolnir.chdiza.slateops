@@ -1,6 +1,7 @@
 # mjolnir.chdiza.slateops
 
-This Mjolnir extension provides versions of some of
+This [Mjolnir](https://github.com/mjolnir-io/mjolnir) extension
+provides versions of some of
 [Slate's](https://github.com/jigish/slate) window-moving and
 window-resizing operations, namely, "corner", "push", "resize", and
 "nudge".
