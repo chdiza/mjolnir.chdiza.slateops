@@ -3,8 +3,8 @@
 -- "push", "resize", and "nudge".
 local slateops = {}
 
-local screen      = require "mjolnir.screen"
-local window      = require "mjolnir.window"
+local screen = require "mjolnir.screen"
+local window = require "mjolnir.window"
 
 ------------------------------------------------------------
 
@@ -13,7 +13,7 @@ function slateops.corner(whichcorner)
   slateops.corner_it(whichcorner, window.focusedwindow())
 end
 
-function slateops.corner_it(whichcorner,your_window)
+function slateops.corner_it(whichcorner, your_window)
   local profile = slateops_util(your_window)
   local neworigin = profile.origin
   local win = profile.wdw_obj
@@ -56,11 +56,11 @@ end
 ------------------------------------------------------------
 
 -- RESIZE
-function slateops.resize(xinc,yinc)
+function slateops.resize(xinc, yinc)
   slateops.resize_it(xinc,yinc,window.focusedwindow())
 end
 
-function slateops.resize_it(xinc,yinc,your_window)
+function slateops.resize_it(xinc, yinc, your_window)
   local win = your_window
   local cursize = win:size()
   cursize.w = cursize.w+xinc
@@ -71,11 +71,11 @@ end
 ------------------------------------------------------------
 
 -- NUDGE
-function slateops.nudge(xshift,yshift)
+function slateops.nudge(xshift, yshift)
   slateops.nudge_it(xshift,yshift,window.focusedwindow())
 end
 
-function slateops.nudge_it(xshift,yshift,your_window)
+function slateops.nudge_it(xshift, yshift, your_window)
   local win = your_window
   local curframe = win:frame()
   curframe.x = curframe.x+xshift
